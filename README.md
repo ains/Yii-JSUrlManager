@@ -29,7 +29,7 @@ The API is almost identical to the "Yii::app()->createUrl()" method.
 
 Examples:
 
-PHP
+**PHP**
 ```php
 Yii::app()->createUrl('user/view');
 ```
@@ -60,4 +60,4 @@ Compatability with Yii Framework
 
 Be aware that any rules which use regular expressions that aren't compatible with the default Javascript libraries will not function as expected. Potentially in the future a more robust Regex library will be used for 100% compatibility, but would introduce an additional dependency.
 
-This code has been tested against the same test suite as the CUrlManager and CUrlRule in the Yii Framework, which has been ported to javascript. The JSUrlManager extension has 96% compatbility with the Yii Test Suite. Currently a test fails due to Javascript not supporting \P for unicode code points.
+This code has been tested against the same test suite as the CUrlManager and CUrlRule in the Yii Framework, which has been ported to javascript. The JSUrlManager extension has 96% compatbility with the Yii Test Suite. Currently only a single test fails due to Javascript not supporting \P for unicode code points.
