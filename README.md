@@ -18,7 +18,7 @@ E.G.
 'preload' => array('EJSUrlManager'),
 'components' => array(
   'EJSUrlManager' => array(
-      'class' => 'ext.JSUrlManager.EJSUrlManager'
+      'class' => 'ext.JSUrlManager.src.EJSUrlManager'
   ),
 )
 ```
