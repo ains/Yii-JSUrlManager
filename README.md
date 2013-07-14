@@ -23,6 +23,8 @@ E.G.
 )
 ```
 
+That's it, no further changes are required to your application or configuration.
+
 Usage
 ======
 The API is almost identical to the "Yii::app()->createUrl()" method.
@@ -43,7 +45,7 @@ Yii.app.createUrl('user/view');
 
 **PHP**
 ```php
-Yii::app()->createUrl('user/view', array('id' => 1);
+Yii::app()->createUrl('user/view', array('id' => 1));
 ```
 
 **Javascript**
