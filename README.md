@@ -57,7 +57,7 @@ Browser Compatibility
 ========
 Browser support is currently **"Internet Explorer 8+, Firefox 3.1+, Safari 4+, Chrome 3+, and Opera 10.5+"**. This is due to a dependency on JSON parse/stringify being present. If requested the code can be refactored for wider browser support.
 
-Compatability with Yii Framework
+Compatibility with Yii Framework
 =========
 
 Be aware that any rules which use regular expressions that aren't compatible with the default Javascript libraries will not function as expected. Potentially in the future a more robust Regex library will be used for 100% compatibility, but would introduce an additional dependency.
