@@ -4,7 +4,9 @@ class EJSUrlManager extends CApplicationComponent
     public function init()
     {
         parent::init();
-        $managerVars = CJSON::encode(get_object_vars(Yii::app()->urlManager));
+        $managerVars              = get_object_vars(Yii::app()->urlManager);
+        $managerVars['urlFormat'] = Yii::app()->urlManager->urlFormat;
+        $managerVars              = CJSON::encode($managerVars);
 
         $asset = Yii::app()->assetManager->publish(
             YiiBase::getPathOfAlias('ext.JSUrlManager.src.assets.js'),
