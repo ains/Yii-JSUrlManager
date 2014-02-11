@@ -11,7 +11,7 @@ class EJSUrlManager extends CApplicationComponent
         $encodedVars = CJSON::encode($managerVars);
 
         $asset = Yii::app()->assetManager->publish(
-            YiiBase::getPathOfAlias('ext.JSUrlManager.src.assets.js'),
+            dirname(__FILE__).'/assets/js',
             true,
             -1,
             YII_DEBUG
