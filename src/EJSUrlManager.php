@@ -8,6 +8,12 @@ class EJSUrlManager extends CApplicationComponent
         
         $managerVars              = get_object_vars($urlManager);
         $managerVars['urlFormat'] = $urlManager->urlFormat;
+        
+        foreach ($managerVars['rules'] as $pattern => $route) {
+            if (is_int($pattern))
+                unset($managerVars['rules'][$pattern]);
+        }
+        
         $encodedVars = CJSON::encode($managerVars);
 
         $asset = Yii::app()->assetManager->publish(
