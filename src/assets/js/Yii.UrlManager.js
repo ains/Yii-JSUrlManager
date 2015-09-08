@@ -33,7 +33,7 @@ var UrlManager = (function () {
         this._rules = [];
 
         this.processRules();
-    }
+    };
 
 
     urlManager.prototype.processRules = function () {
@@ -80,6 +80,7 @@ var UrlManager = (function () {
         }
 
         var anchor = '';
+        console.log('Params: ' + params);
         if ("#" in params) {
             anchor = '#' + params['#'];
             delete  params['#'];
@@ -168,7 +169,7 @@ var UrlManager = (function () {
 
     urlManager.prototype.getBaseUrl = function () {
         return (this.opts.showScriptName) ? Yii.app.scriptUrl : Yii.app.baseUrl;
-    }
+    };
 
     return urlManager;
 }).call(this);
@@ -271,7 +272,7 @@ var UrlRule = (function () {
             //Remove any double brackets to prevent double grouping
             this.routePattern = this.routePattern.replace(/\(\((.*?)\)\)/g, "($1)");
         }
-    }
+    };
 
     urlRule.prototype.createUrl = function (manager, route, params, ampersand) {
         var caseSensitive = '';
@@ -356,7 +357,7 @@ var UrlRule = (function () {
         }
 
         return url;
-    }
+    };
 
     return urlRule;
 }).call(this);
