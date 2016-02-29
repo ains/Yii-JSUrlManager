@@ -1,4 +1,4 @@
-<?php namespace ains\Yii_JSUrlManager;
+<?php
 
 class EJSUrlManager extends CApplicationComponent
 {

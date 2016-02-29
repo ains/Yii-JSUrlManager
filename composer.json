@@ -7,10 +7,5 @@
             "email": "me@ains.co"
         }
     ],
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "ains\\Yii_JSUrlManager\\": "src"
-        }
-    }
+    "require": {}
 }
