@@ -1,0 +1,11 @@
+{
+    "name": "ains/yii-js-url-manager",
+    "description": "Yii extension providing a Javascript implementation of the UrlManager.",
+    "authors": [
+        {
+            "name": "Ainsley Escorce-Jones",
+            "email": "me@ains.co"
+        }
+    ],
+    "require": {}
+}
