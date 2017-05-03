@@ -1,4 +1,5 @@
 <?php
+
 class EJSUrlManager extends CApplicationComponent
 {
     public function init()
