@@ -80,7 +80,6 @@ var UrlManager = (function () {
         }
 
         var anchor = '';
-        console.log('Params: ' + params);
         if ("#" in params) {
             anchor = '#' + params['#'];
             delete  params['#'];
