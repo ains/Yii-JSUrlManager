@@ -33,7 +33,7 @@ OR if you are using composer you should add this into your composer.json :
                 "name": "ains/Yii-JSUrlManager",
                 "version": "master-dev",
                 "source": {
-                    "url": "https://github.com/georgezim85/Yii-JSUrlManager.git",
+                    "url": "https://github.com/ains/Yii-JSUrlManager.git",
                     "type": "git",
                     "reference": "master"
                 }
