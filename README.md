@@ -23,6 +23,43 @@ E.G.
 )
 ```
 
+OR if you are using composer you should add this into your composer.json :
+```
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "ains/Yii-JSUrlManager",
+                "version": "master-dev",
+                "source": {
+                    "url": "https://github.com/georgezim85/Yii-JSUrlManager.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+
+        },
+    ],
+    "require": {
+        "ains/Yii-JSUrlManager": "dev-master",
+    }
+}
+```
+Then type on terminal: php composer.phar install
+and add to your main.php:
+```
+return array(
+    ...
+    'preload' => array('log', 'EJSUrlManager'),
+    'components' => array(
+        'EJSUrlManager' => array(
+            'class' => 'application.vendor.ains.Yii-JSUrlManager.src.EJSUrlManager'
+        ),
+    ),
+    ...
+);
+```
 That's it, no further changes are required to your application or configuration.
 
 Usage
