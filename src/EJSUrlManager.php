@@ -32,7 +32,8 @@ class EJSUrlManager extends CApplicationComponent
         $scriptUrl = Yii::app()->getRequest()->getScriptUrl();
         $hostInfo = Yii::app()->getRequest()->getHostInfo();
 
-        $cs->registerScriptFile($asset . '/Yii.UrlManager.min.js', CClientScript::POS_HEAD);
+        $cs->registerScriptFile($asset . '/PHPJS.dependencies.js', CClientScript::POS_HEAD);
+        $cs->registerScriptFile($asset . '/Yii.UrlManager.js', CClientScript::POS_HEAD);
         $cs->registerScript(
             "yiijs.create.js",
             "var Yii = Yii || {}; Yii.app = {scriptUrl: '{$scriptUrl}',baseUrl: '{$baseUrl}',
